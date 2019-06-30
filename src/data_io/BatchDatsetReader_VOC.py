@@ -105,7 +105,7 @@ def create_BatchDatset():
     download_if_no_data('./data/', url)
     
     print("Initializing VOC2012 Batch Dataset Reader...")
-    data_record = read_data_record('./data/VOCdevkit/VOC2012')
+    data_record = read_data_record('./data/data')
     train_dataset = BatchDatset(data_record['training'], True)
     valid_dataset = BatchDatset(data_record['validation'], False)
     
