@@ -101,7 +101,7 @@ def download_if_no_data(dir_path, url_name):
 
 def create_BatchDatset():
     print("Download if not VOC2012 exist...")
-    url = 'http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar'
+    url = 'https://www.kaggle.com/franchenstein/austin-zoning-satellite-images/downloads/data.zip'
     download_if_no_data('./data/', url)
     
     print("Initializing VOC2012 Batch Dataset Reader...")
